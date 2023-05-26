@@ -3,40 +3,121 @@
     margin: 0;
 }
 
-.body {
-    height: 100vh;
-    background-color: #FCFFB2;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+@media screen and (max-width:767px) {
+    .body {
+        height: 100vh;
+        background-color: #FCFFB2;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+    }
+
+    .NavBar {
+        grid-column: 1 / span 12;
+        grid-row: 1 / span 1;
+        background-color: #FF55BB;
+    }
+
+    .Footer {
+        grid-column: 1 / span 12;
+        grid-row: 11 / span 2;
+        background-color: #B6EAFA
+    }
+
+    .LeftSidePanel {
+        display: none;
+    }
+
+    .RightSidePanel {
+        display: none; 
+    }
+
+    .Content {
+        grid-column: 3/ span 8;
+        grid-row: 2 / span 9;
+
+    }
+
 }
 
-.NavBar {
-    grid-column: 1 / span 12;
-    grid-row: 1 / span 1;
-    background-color: #FF55BB;
+@media screen and (min-width: 768px) and (max-width:1024px) {
+    .body {
+        height: 100vh;
+        background-color: #FCFFB2;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+    }
+
+    .NavBar {
+        grid-column: 1 / span 12;
+        grid-row: 1 / span 1;
+        background-color: #FF55BB;
+    }
+
+    .Footer {
+        grid-column: 1 / span 12;
+        grid-row: 11 / span 2;
+        background-color: #B6EAFA
+    }
+
+    .LeftSidePanel {
+        grid-column: 1 / span 4;
+        grid-row: 2 / span 9;
+        background-color: #FFD3A3
+    }
+
+    .RightSidePanel {
+        grid-column: 9/ span 4;
+        grid-row: 2 / span 9;
+        background-color: #FFD3A3
+    }
+
+    .Content {
+        grid-column: 5/ span 4;
+        grid-row: 2 / span 9;
+
+    }
+
 }
 
-.Footer {
-    grid-column: 1 / span 12;
-    grid-row: 11 / span 2;
-    background-color: #B6EAFA
-}
+@media screen and (min-width:1025px) {
+    .body {
+        height: 100vh;
+        background-color: #FCFFB2;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+    }
 
-.LeftSidePanel {
-    grid-column: 1 / span 2;
-    grid-row: 2 / span 9;
-    background-color: #FFD3A3
-}
+    .NavBar {
+        grid-column: 1 / span 12;
+        grid-row: 1 / span 1;
+        background-color: #FF55BB;
+    }
 
-.RightSidePanel {
-    grid-column: 11/ span 2;
-    grid-row: 2 / span 9;
-    background-color: #FFD3A3
-}
+    .Footer {
+        grid-column: 1 / span 12;
+        grid-row: 11 / span 2;
+        background-color: #B6EAFA
+    }
 
-.Content {
-    grid-column: 3/ span 8;
-    grid-row: 2 / span 9;
-    
+    .LeftSidePanel {
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 9;
+        background-color: #FFD3A3
+    }
+
+    .RightSidePanel {
+        grid-column: 11/ span 2;
+        grid-row: 2 / span 9;
+        background-color: #FFD3A3
+    }
+
+    .Content {
+        grid-column: 3/ span 8;
+        grid-row: 2 / span 9;
+
+    }
+
 }
